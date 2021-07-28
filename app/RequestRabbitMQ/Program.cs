@@ -6,7 +6,10 @@ namespace RequestRabbitMQ
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Topicmessages topicm = new Topicmessages();
+            topicm.SendMessage();
+            Console.ReadLine();
+            // Console.WriteLine("Hello World!");
         }
     }
 }
