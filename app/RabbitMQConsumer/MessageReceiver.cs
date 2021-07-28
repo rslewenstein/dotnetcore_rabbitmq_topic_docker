@@ -12,7 +12,7 @@ namespace RabbitMQConsumer
             _channel = channel;
         }
 
-        public override void HandlerBasicDeliver(string consumerTag, ulong deliveryTag, bool redelivered,
+        public void HandleBasicDeliver(string consumerTag, ulong deliveryTag, bool redelivered,
                                                  string exchange, string routingKey,
                                                  IBasicProperties properties, byte[] body)
         {
